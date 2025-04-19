@@ -144,7 +144,7 @@ class LoginController extends Controller {
                 if ($usuario->save()) {
                     \Mail::send('email', array('login' => $login, 'senha' => $senha), function($message)use($request, $email) {
                         $message->to($email);
-                        $message->from("vandogouveia67@gmail.com");
+                        $message->from(env('morenofalo5@gmail.com'));
                         $message->subject("Recuperação de Senha");
                     });
                     $data["resp"] = "<div class='alert alert-info'>"
