@@ -42,7 +42,7 @@
                 </p>
                 @yield("conteudo")
                 <div class="col-md-12">
-                    {!! $resp or '' !!}
+                    {!! $resp ?? '' !!}
                 </div>
             </div>
         </div>                   
