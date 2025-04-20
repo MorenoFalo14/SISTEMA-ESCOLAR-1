@@ -30,7 +30,7 @@
                         <a href='{{ route('novo') }}' class="forgot-password pull-right">Novo usuário</a>
                         {{ csrf_field() }}
                 </form><!-- /form -->
-                        {!! $resp or '' !!}
+                        {!! $resp ?? '' !!}
              </div><!-- /card-container --> 
          </div><!-- /container -->
     </body>
