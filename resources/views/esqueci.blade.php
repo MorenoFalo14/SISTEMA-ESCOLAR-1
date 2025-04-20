@@ -31,7 +31,7 @@
                     </div>
                     {{ csrf_field() }}
                 </form>
-                    {!! $resp or '' !!}
+                    {!! $resp ?? '' !!}
             </div>
         </div>
     </body>
